@@ -10,10 +10,10 @@ btn.addEventListener('click', function() {
 				alert("Please enter valid details")
 			}
 			else if(b>18){
-				setTimeOut(()=> resolve(`Welcome, ${a}. You can vote`),4000);
+				setTimeout(()=> resolve(`Welcome, ${a}. You can vote`),4000);
 			}
 			else{
-				setTimeOut(()=> reject(`Oh sorry ${a}. You aren't old enough`),1000);
+				setTimeout(()=> reject(`Oh sorry ${a}. You aren't old enough`),1000);
 			}
 		})
 	
