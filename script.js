@@ -6,11 +6,13 @@ btn.addEventListener('click', function() {
 		return new Promise((resolve,reject)=>{
 			let a = Name.value;
 			let b = Age.value;
-			if(b>18){
-				setTimeOut(console.log(`Welcome, ${a}. You can vote.`),4000);
+			if(a.trim()=="")
+			
+			else if(b>18){
+				setTimeOut(()=> resolve(`Welcome, ${a}. You can vote`),4000);
 			}
 			else{
-				setTimeOut(console.log(`Oh sorry ${a}. You aren't old enough.`),1000);
+				setTimeOut(()=> reject(`Oh sorry ${a}. You aren't old enough`),1000);
 			}
 		}).then((res)=>alert(res))
 		.catch((err)=>alert(res))
