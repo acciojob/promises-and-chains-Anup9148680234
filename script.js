@@ -15,6 +15,6 @@ btn.addEventListener('click', function() {
 			else{
 				setTimeOut(()=> reject(`Oh sorry ${a}. You aren't old enough`),1000);
 			}
-		}).then((res)=>alert(res))
-		.catch((err)=>alert(res))
+		}).then((resolve)=>alert(resolve))
+		.catch((reject)=>alert(reject))
 });
